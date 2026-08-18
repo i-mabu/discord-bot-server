@@ -1,0 +1,56 @@
+services:
+  suzushiro:
+    build:
+      context: ./suzushiro
+      dockerfile: ../docker/suzushiro.Dockerfile
+    container_name: suzushiro
+    restart: unless-stopped
+    env_file:
+      - ./env/suzushiro.env
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  switch-roles:
+    build:
+      context: ./switch-roles
+      dockerfile: ../docker/switch-roles.Dockerfile
+    container_name: switch-roles
+    restart: unless-stopped
+    env_file:
+      - ./env/switch-roles.env
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  mabusaba:
+    build:
+      context: ./mabusaba
+      dockerfile: ../docker/mabusaba.Dockerfile
+    container_name: mabusaba
+    restart: unless-stopped
+    env_file:
+      - ./env/mabusaba.env
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  lol:
+    build:
+      context: ./lol
+      dockerfile: ../docker/lol.Dockerfile
+    container_name: lol
+    restart: unless-stopped
+    env_file:
+      - ./env/lol.env
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"

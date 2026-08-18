@@ -1,0 +1,12 @@
+[submodule "suzushiro"]
+	path = suzushiro
+	url = https://github.com/i-mabu/suzushiro.git
+[submodule "switch-roles"]
+	path = switch-roles
+	url = https://github.com/i-mabu/switch-roles.git
+[submodule "mabusaba"]
+	path = mabusaba
+	url = https://github.com/i-mabu/mabusaba.git
+[submodule "lol"]
+	path = lol
+	url = https://github.com/soma1586/lol.git
