@@ -27,7 +27,7 @@ services:
         max-size: "50m"
         max-file: "5"
 
-    mabusaba:
+  mabusaba:
     build:
       context: ./mabusaba
       dockerfile: ../docker/mabusaba.Dockerfile
