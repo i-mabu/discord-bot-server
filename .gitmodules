@@ -10,3 +10,6 @@
 [submodule "lol"]
 	path = lol
 	url = https://github.com/soma1586/lol.git
+[submodule "mabusaba-game"]
+	path = mabusaba-game
+	url = https://github.com/i-mabu/mabusaba-game.git

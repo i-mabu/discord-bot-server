@@ -44,6 +44,23 @@ services:
         max-size: "50m"
         max-file: "5"
 
+    mabusaba-game:
+    build:
+      context: ./mabusaba-game
+      dockerfile: ../docker/mabusaba-game.Dockerfile
+    container_name: mabusaba-game
+    restart: unless-stopped
+    env_file:
+      - ./env/mabusaba-game.env
+    volumes:
+      - ./mabusaba-game:/app
+      - /app/node_modules
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+
   lol:
     build:
       context: ./lol
