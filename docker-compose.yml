@@ -44,7 +44,7 @@ services:
         max-size: "50m"
         max-file: "5"
 
-    mabusaba-game:
+  mabusaba-game:
     build:
       context: ./mabusaba-game
       dockerfile: ../docker/mabusaba-game.Dockerfile
